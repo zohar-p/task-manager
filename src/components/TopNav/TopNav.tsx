@@ -9,7 +9,7 @@ export default function Navbar(props: Props) {
 
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between bg-pink-500 mb-3">
+      <nav className="relative flex flex-wrap items-center justify-between bg-gradient-to-br from-cyan-500 to-blue-500 mb-3">
         <div className="container mx-auto flex flex-wrap items-center justify-between">
             <TopNavBtn
             >

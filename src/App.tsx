@@ -1,11 +1,12 @@
 import './App.css';
+import TasksList from './components/Tasks/TasksList/TasksList';
+import TopNav from './components/TopNav/TopNav';
 
 function App() {
-  return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  );
+  return (<>
+  <TopNav />
+    <TasksList />
+  </>);
 }
 
 export default App;

@@ -3,15 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAdd, faBars } from '@fortawesome/free-solid-svg-icons'
 import TopNavBtn from './TopNavBtn/TopNavBtn';
 
-type Props = {}
+type Props = {toggleDrawer: () => void}
 
-export default function Navbar(props: Props) {
+export default function Navbar({ toggleDrawer }: Props) {
 
   return (
     <>
       <nav className="relative flex flex-wrap items-center justify-between bg-gradient-to-br from-cyan-500 to-blue-500 mb-3">
         <div className="container mx-auto flex flex-wrap items-center justify-between">
             <TopNavBtn
+              onClick={toggleDrawer}
             >
                 <FontAwesomeIcon icon={faBars} />
             </TopNavBtn>

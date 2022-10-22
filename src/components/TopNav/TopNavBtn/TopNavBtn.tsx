@@ -1,14 +1,18 @@
-import React, { ReactNode } from 'react'
+import React, { FC, ReactNode } from 'react'
 
-type Props = {children: ReactNode}
+type Props = {
+  children: ReactNode
+  onClick?: any
+}
 
-const TopNavBtn = (props: Props) => {
+const TopNavBtn: FC<Props> = ({ children, onClick }) => {
   return (
     <button
+    onClick={onClick}
     className="text-white cursor-pointer text-xl leading-none py-3 px-4 border border-solid border-transparent rounded bg-transparent outline-none focus:outline-none"
     type="button"
     >
-      {props.children}
+      {children}
     </button>
   )
 }
